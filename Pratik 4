@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Pratik4 {
+    public static void main(String[] args) {
+        int km;
+        int startPrice = 10;
+        double perKm = 2.20;
+        double total;
+        double enDusukucret = 20;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Mesafeyi KM cinsinden giriniz : ");
+        km = input.nextInt();
+
+        total = (km  * perKm + startPrice);
+
+       if (total <= enDusukucret) {
+            total = enDusukucret;
+        }
+
+        System.out.println("Toplam Ücret : " + total + "TL");
+    }
+}
